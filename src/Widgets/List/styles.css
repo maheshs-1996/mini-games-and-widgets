@@ -1,0 +1,25 @@
+.search_box {
+    padding: 10px;
+    width: 80%;
+}
+
+.search_results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.search_results li {
+    padding: 10px;
+    border: solid 0.5px black;
+    cursor: pointer;
+}
+
+.search_results li:hover,
+.search_results li.selected {
+    border: solid 0.5px black;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}

@@ -1,0 +1,10 @@
+.otp_box {
+  padding: 20px;
+}
+
+.otp_box input {
+  padding: 10px;
+  border-radius: 4px;
+  width: 40px;
+  margin-right: 16px;
+}

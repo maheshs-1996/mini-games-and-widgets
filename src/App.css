@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bg: #000000;
+  --color: #ffffff;
+  --border: rgba(255, 255, 255, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 12px 8px;
+  outline: none;
+  border-radius: 8px;
+  background: #d11245;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-details-sec {
+  width: 30%;
+  margin: auto;
+}
+
+.add-user-details-form {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.add-user-details-form input {
+  padding: 8px;
+}
+
+.users {
+  /* border: solid 1px black; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.user {
+  /* width: 80%; */
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border: solid 0.5px #d11245;
+  padding: 12px;
+}
+.user .user-details,
+.user .update-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.user .update-actions {
+  gap: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.update-actions img {
+  width: 16px;
+  object-fit: contain;
+}
+
+.add-user-details-btn {
+  text-transform: capitalize;
+}
+
+.project-name {
+  color: #313131;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.project-name:hover {
+  color: #d11245;
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }

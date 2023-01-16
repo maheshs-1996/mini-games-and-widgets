@@ -1,0 +1,77 @@
+:root {
+  --bg: black;
+  --color: #ffffff;
+  --border: rgba(255, 255, 255, 0.5);
+  --cellWidth: 65px;
+  --absent: #3a3a3c;
+  --present: #b59f3b;
+  --correct: #538d4e;
+  --default: black;
+}
+
+.wordle-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  overflow: hidden;
+  font-family: Lato;
+  color: var(--color);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.wordle-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), var(--cellWidth));
+}
+
+.wordle-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wordle-cell {
+  width: var(--cellWidth);
+  aspect-ratio: 1;
+  border: solid 0.5px var(--border);
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  align-items: center;
+  margin-top: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.keyboard .keyboard-row {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 8px;
+}
+
+.keyboard .keyboard-row .keyboard-cell {
+  padding: 4px 6px;
+  color: var(--color);
+  background-color: var(--default);
+  border: solid 0.5px var(--color);
+  border-radius: 4px;
+}
+
+.keyboard .keyboard-row .keyboard-cell.greyout {
+  color: #ffffff80;
+  border: solid 0.5px #ffffff80;
+  cursor: default;
+}

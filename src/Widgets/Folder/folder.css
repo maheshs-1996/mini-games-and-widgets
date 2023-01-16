@@ -1,0 +1,58 @@
+
+* {
+    user-select: none;
+}
+
+.folder {
+    padding: 10px;
+    color: black;
+    text-align: left;
+    display: flex;
+    width: fit-content;
+    min-width: 400px;
+    align-items: center;
+}
+.folder.files_present {
+    cursor: pointer;
+}
+
+.folder_img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.contents {
+    @extend .folder;
+    padding-left: 20px;
+}
+
+.cta_container {
+    margin-left: auto;
+}
+
+button {
+    background-color: grey;
+    padding: 5px 10px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 200ms;
+    border: solid 1px grey;
+}
+
+button:hover {
+    background-color: white;
+    color:grey;
+}
+
+.addContent {
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: -10px;
+}
+
+.addContent button {
+    padding: 5px;
+    font-size: 10px;
+    margin-left: 12px;
+}
